@@ -1,0 +1,57 @@
+<!--
+//*********************************************************************************
+* Project: < JOKE FRAMEWORK 2020 … >
+* Assignment: < assignment 1 >
+* Author(s): < Sureya farah …>
+* Student Number: < 101062225  >
+* Date: Oct 11 2020
+* Description: <TEMPLATE for our jokes to render on a web application in localhost8080:>
+*********************************************************************************//
+Sureya farah -101062225--->
+
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Jokes</title>
+</head>
+<style>
+    body {
+        background-color: lightblue;
+    }
+
+    h1 {
+        color: white;
+        text-align: center;
+    }
+
+    p {
+        font-family: verdana;
+        font-size: 20px;
+    }
+    .myAuthors {
+        text-emphasis-color: aliceblue;
+        border: 5px outset #eae5e5;
+        background-color: #3e484c;
+        text-align: center;
+    }
+    .myJokes {
+        border: 5px outset #6c7c55;
+        background-color: #ded5aa;
+        text-align: center;
+    }
+</style>
+<body>
+<div class="myAuthors">
+    <h2>Authors </h2>
+    <p style="color: #eae5e5">Sureya Farah - 101062225 </p>
+<div class="myJokes">
+<h1>Chuck Norris Jokes</h1>
+<p th:text="${joke}">Insert joke here!!</p>
+</div>
+
+
+</div>
+</body>
+</html>

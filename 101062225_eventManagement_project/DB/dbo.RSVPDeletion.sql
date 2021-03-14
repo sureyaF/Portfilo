@@ -1,0 +1,5 @@
+﻿CREATE PROCEDURE dbo.RSVPDeletion
+@RSVPId int
+AS
+	DELETE tbl_RSVP
+	WHERE RSVPId= @RSVPId
